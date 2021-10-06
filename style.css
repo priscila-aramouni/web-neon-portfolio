@@ -1,0 +1,352 @@
+/* This project was tested on a screen of 480px and 1530px */
+
+
+/******		GENERAL		******/
+* { 
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #090915;
+	color: white;
+	line-height: 1.75em;
+	font-size: 1.0em;
+	font-family: 'Josefin Sans', sans-serif;
+	text-decoration: none;
+	text-align: center;
+}
+
+p {
+	font-size: 1.1em;
+	margin: 25px 25px;
+}
+
+hr {
+	border-color: white;
+	width: 80%;
+	margin: 0px auto;
+	box-shadow: 0 0 15px #ef7fe1, 0 0 20px #cd33ac, 0 0 25px #ab068a, 0 0 30px #ab068a, 0 0 35px #ab068a, 0 0 40px #ab068a;
+
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	line-height: 1em;
+	font-size: 1.9em;
+	font-family: Brush Script MT, sans-serif;
+	text-shadow: 0 0 15px #ef7fe1, 0 0 20px #cd33ac, 0 0 25px #ab068a, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+
+.pre-post-banner {
+	background-image: linear-gradient(#090915 20%, #cbcbcd);
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+
+/******		CARDS		******/
+.card {
+	margin: 40px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 80%;
+}
+
+.card-image {
+	margin: 0px auto;
+	width: 30%;
+}
+
+
+.card hr {
+	border-color: white;
+	width: 80%;
+	margin: 0px auto;
+	box-shadow: 0 0 15px #ef7fe1, 0 0 20px #cd33ac, 0 0 25px #4e09b9, 0 0 30px #4e09b9, 0 0 35px #4e09b9, 0 0 40px #4e09b9;
+}
+
+
+/******		BANNERS		******/
+.banner1 { 
+	max-width: 100%;
+	content: url("img/banner1.jpg");
+}
+
+.banner2 {
+	max-width: 100%;
+	content: url("img/banner2.jpg");
+}
+
+/******		NAVIGATION		******/
+#logo {
+	font-family: Brush Script MT, sans-serif;
+	font-size: 1.7em;
+	text-align: left;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+#hamburger {
+	width: 6%;
+	position: absolute;
+    top: 13px;
+    right: 20px;
+    cursor: pointer; 
+}
+
+.active {
+	display: flex;
+}
+
+nav {
+	background-image: linear-gradient(to right,#C301A0,#7933E9);
+}
+
+nav ul {
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+    display: none;
+}
+
+nav li {
+	list-style-type: none;
+	padding: 7px 0px;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	padding: 0px 160px;
+}
+
+/******		PROGRESS BARS		******/
+.skill-percentage {
+	float: right;
+}
+
+.progress-bar {
+	max-width: 87%;
+	height: 30px;
+	margin: 6% 4%;
+	text-align: left;
+	padding-left: 2%;
+	padding-right: 2%;
+	border-radius: 20px;
+	border-width: 2px;
+	border-style: solid;
+	box-shadow: 0 0 15px #cd33ac, 0 0 20px #cd33ac, 0 0 25px #4e09b9;
+}
+
+.progress-bar:nth-child(odd) {
+	background-color: #bb0ead;
+
+}
+
+.progress-bar:nth-child(even) {
+	background-color: #6c04b6;
+}
+
+/******		FOOTER		******/
+#footer
+{
+	padding: 3em 0em 2em 0em;
+	background-color: #14142e;
+}
+
+ul.contact
+{
+	padding: 1.5em 0 0 0;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+ul.contact li img {
+	width: 35%;
+}
+
+* {box-sizing:border-box}
+
+
+/******		SLIDESHOW		******/
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+	left: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.current, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.activity {
+	margin: 60px 40px;
+}
+
+.activity>ul {
+	margin-top: 10px;
+	text-align: left;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media screen and (min-width: 481px) {
+	nav ul {
+		max-width: 100%;
+		flex-direction: row;
+		justify-content: center;
+	    display: flex
+		}
+
+	.slideshow-container {
+		max-width: 65%;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+	line-height: 1em;
+	font-size: 2.3em;
+	}
+
+	.activity>ul {
+		margin: 10px 300px;
+	}
+
+	ul.contact li img {
+		width: 30%;
+	}
+
+	#logo {
+		display: inline-block;
+		padding-bottom: 15px; 
+		padding-top: 15px;
+	}
+
+	#hamburger {
+		display: none;
+	}
+
+	nav li:hover {
+	background-color: rgba(226, 158, 240, 0.5);
+	}
+
+	.banner1 {
+		max-width: 40%;
+		content: url(img/banner1-desktop.jpg);
+	}
+
+	.banner2 {
+		max-width: 43%;
+		content: url(img/banner3.jpg);
+		margin-top: 25px;
+		margin-bottom: 25px;
+		position: relative;
+		z-index: -1;
+	}
+
+	.card-image {
+		width: 12%;
+	}
+
+	.pre-post-banner {
+		padding: 1px 245px;
+	}
+
+	.progress-bar {
+		margin: 2% 4%;
+		height: 40px;
+	}
+}
+
+
